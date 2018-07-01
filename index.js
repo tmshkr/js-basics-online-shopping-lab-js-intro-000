@@ -20,7 +20,7 @@ function viewCart() {
     return 'Your shopping cart is empty.'
   var contents = ''
   for (let i = 0; i < cart.length; i++){
-    contents += `In your cart, you have ${cart[i].itemName} at ${cart[i].itemPrice}.`
+    contents += `In your cart, you have ${cart[i].itemName} at $${cart[i].itemPrice}.`
   }
   return contents
 }
