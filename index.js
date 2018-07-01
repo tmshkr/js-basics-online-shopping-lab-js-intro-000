@@ -21,9 +21,9 @@ function viewCart() {
   var contents = 'In your cart, you have '
   for (let i = 0; i < cart.length; i++){
     contents += `${cart[i].itemName} at $${cart[i].itemPrice}`
-    if (i <= cart.length - 1)
+    if (i <= cart.length - 2)
       contents += ', '
-    if (i === cart.length - 1)
+    if (i === cart.length - 2)
       contents += 'and '
   }
   contents += '.'
