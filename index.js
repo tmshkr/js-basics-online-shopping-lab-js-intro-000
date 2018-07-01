@@ -21,11 +21,12 @@ function viewCart() {
   var contents = 'In your cart, you have '
   for (let i = 0; i < cart.length; i++){
     contents += `${cart[i].itemName} at $${cart[i].itemPrice}`
-    if (i < cart.length - 1)
+    if (i <= cart.length - 1)
       contents += ', '
     if (i === cart.length - 1)
-      contents += 'and'
+      contents += 'and '
   }
+  contents += '.'
   return contents
 }
 
