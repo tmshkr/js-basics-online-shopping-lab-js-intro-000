@@ -22,6 +22,7 @@ function viewCart() {
   for (let i = 0; i < cart.length; i++){
     contents += `In your cart, you have ${cart[i].itemName} at ${cart[i].itemPrice}.`
   }
+  return contents
 }
 
 function total() {
